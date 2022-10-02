@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&family=Roboto+Mono:wght@300&family=Roboto+Slab&display=swap');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 1);
+  background-color: #f1f1f1;
+  border-radius: 0px 0px 8px 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+body{
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364)
+}
+
+.inner{
+  padding: 2rem;
+  width: 60%;
+  margin: auto;
+}
+
+.icons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.icon{
+  transition: .5s;
+  height: 12rem;
+  width: 9rem;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 1);
+}
+
+.icon:hover{
+  padding-top: .5rem;
+  background-color: #E9E9E9;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.icon h2{
+  font-size: 5rem;
+  line-height: 200%;
+}
+
+.game{
+  margin-top: 2rem;
+  color: #f1f1f1;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.gameVs{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#game-el1{
+  font-size: 1.5rem;
+}
+
+#game-el2{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+#game-el3{
+  font-size: 1.5rem;
+}
+
+#result-el{
+  font-size: 2rem;
+}
+
+#score-el{
+  margin-top: 1.5rem;
+}
+
+footer{
+  position: fixed;
+  bottom: 3.5%;
+  left: 45%;
+  right: 45%;
+  width: 100%;
+}
+
+footer a{
+  color: #f1f1f1;
+  text-decoration: underline;
+  padding: 2rem;
+}
+
+footer img{
+  vertical-align: bottom;
+}
+
+footer a:hover{
+  opacity: .8;
+}
+
+@media only screen and (max-width: 1000px) {
+  .inner {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .inner {
+    width: 100%;
+    padding: 0.1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
